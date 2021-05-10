@@ -1,13 +1,11 @@
-from mycroft 
-import MycroftSkill
-import intent_file_handler
+from mycroft import MycroftSkill, intent_file_handler
 
 class Bark(MycroftSkill):
 	def __init__(self):
-		MycdoftSkill.__init__(self)
+		MycroftSkill.__init__(self)
 		
 	@intent_file_handler('bark.intent')
-	def handle_bark(self, massage):
+	def handle_bark(self, message):
 		self.speak_dialoog('bark')
 	
 
